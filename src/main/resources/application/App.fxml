@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #112;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.App">
+   <children>
+      <StackPane fx:id="pane" layoutX="367.0" layoutY="198.0" prefHeight="402.0" prefWidth="631.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="367.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="198.0" />
+      <Button fx:id="buttonn" mnemonicParsing="false" text="Button" />
+   </children>
+</AnchorPane>

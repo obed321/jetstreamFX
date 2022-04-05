@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #112;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Text fill="#50b942" layoutX="444.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The checking was successfull!">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Button layoutX="516.0" layoutY="430.0" mnemonicParsing="false" onAction="#switchToDashboard" style="-fx-background-color: #f78600#f78600;" text="Return to dashboard" textFill="#0a0a0a">
+         <padding>
+            <Insets bottom="10.0" left="35.0" right="35.0" top="10.0" />
+         </padding></Button>
+      <ImageView fx:id="logo" fitHeight="44.0" fitWidth="36.0" layoutX="54.0" layoutY="30.0" onMouseClicked="#switchToHome" preserveRatio="true">
+         <image>
+            <Image url="file:/Users/khabib/Documents/mau/Systemutveckling-project/jetStream/jetStream/src/image/jetStream.pngfile:/Users/khabib/Documents/mau/Systemutveckling-project/jetStream/jetStream/src/image/jetStream.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="97.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JetStream">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
