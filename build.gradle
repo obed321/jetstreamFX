@@ -1,0 +1,45 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.10'
+}
+
+group 'sokke'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    junitVersion = '5.7.1'
+}
+
+sourceCompatibility = '15'
+targetCompatibility = '15'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+application {
+    mainModule = 'sokke.jetstreamfx'
+    mainClass = 'sokke.jetstreamfx.HelloApplication'
+}
+
+javafx {
+    version = '15.0.1'
+    modules = [ 'javafx.controls', 'javafx.fxml', 'javafx.media','javafx.graphics' ]}
+
+dependencies {
+    implementation('org.kordamp.ikonli:ikonli-javafx:12.2.0')
+    implementation('org.kordamp.ikonli:ikonli-materialdesign-pack:1.9.0')
+    implementation(group: 'org.openjfx', name: 'javafx-media', version: '13')
+    implementation(group: 'org.postgresql', name: 'postgresql', version: '42.2.0')
+    testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+}
+
+test {
+    useJUnitPlatform()
+}
