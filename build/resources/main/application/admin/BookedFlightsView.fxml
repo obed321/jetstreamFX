@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="601.0" prefWidth="927.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <ListView layoutX="91.0" layoutY="91.0" prefHeight="454.0" prefWidth="630.0" />
+      <Button layoutX="754.0" layoutY="334.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="136.0" text="Delete booking" />
+      <Button layoutX="754.0" layoutY="212.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="136.0" text="Create booking" />
+      <Button layoutX="759.0" layoutY="488.0" mnemonicParsing="false" onAction="#switchToAdminView" prefHeight="57.0" prefWidth="136.0" text="Return to AdminView" />
+      <Text layoutX="379.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to BookedFlightsView" wrappingWidth="169.490234375" />
+   </children>
+</AnchorPane>

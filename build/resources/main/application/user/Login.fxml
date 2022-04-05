@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #112;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <TextField fx:id="login_email" layoutX="525.0" layoutY="272.0" promptText="email" text="test@test.com" />
+      <Button layoutX="526.0" layoutY="342.0" mnemonicParsing="false" onAction="#switchToDashboard" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #f87000;" text="Login" textFill="WHITE" />
+      <Button fx:id="register" layoutX="525.0" layoutY="418.0" mnemonicParsing="false" onAction="#switchToRegistration" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #347c9e;" text="Register" textFill="WHITE" />
+      <ImageView fx:id="logo" fitHeight="44.0" fitWidth="36.0" layoutX="44.0" layoutY="20.0" onMouseClicked="#switchToHome" preserveRatio="true">
+         <image>
+            <Image url="@../image/jetStream.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="87.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JetStream">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Label fx:id="error" layoutX="530.0" layoutY="452.0" prefHeight="17.0" prefWidth="149.0" textFill="#ff9900" />
+      <Label fx:id="success_msg" layoutX="515.0" layoutY="33.0" textFill="#3dee46" />
+      <Button layoutX="525.0" layoutY="382.0" mnemonicParsing="false" onAction="#switchToAdminView" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #f87000;" text="Login as Admin" textFill="WHITE" />
+      <PasswordField fx:id="login_pass" layoutX="525.0" layoutY="309.0" promptText="password" text="123" />
+   </children>
+</AnchorPane>
